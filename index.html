@@ -11,20 +11,21 @@
             margin: 0;
             padding-bottom: 3rem;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #E6E6FA;
-            color: #4B0082;
+            background-color: #F5F0FF; /* Light lavender background */
+            color: #4B0082; /* Dark purple text */
             text-align: center;
         }
 
         h2 {
             padding: 1rem;
-            background: #D8BFD8;
+            background: #9370DB; /* Medium purple header */
             margin: 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #FFF; /* White text for contrast */
         }
 
         #form {
-            background: rgba(0, 0, 0, 0.15);
+            background: rgba(147, 112, 219, 0.2); /* Semi-transparent medium purple */
             padding: 0.25rem;
             position: fixed;
             bottom: 0;
@@ -34,7 +35,7 @@
             height: 3rem;
             box-sizing: border-box;
             backdrop-filter: blur(10px);
-            border-top: 2px solid #4B0082;
+            border-top: 2px solid #9370DB; /* Medium purple border */
         }
 
         #input {
@@ -43,28 +44,30 @@
             flex-grow: 1;
             border-radius: 2rem;
             margin: 0.25rem;
-            background: #F8F0FF;
-            color: #4B0082;
+            background: #FFF; /* White input background */
+            color: #4B0082; /* Dark purple text */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         #input:focus {
             outline: none;
+            box-shadow: 0 2px 8px rgba(147, 112, 219, 0.3); /* Purple glow on focus */
         }
 
         #form>button {
-            background: #333;
+            background: #9370DB; /* Medium purple button */
             border: none;
-            padding: 0 1rem;
+            padding: 0 1.5rem;
             margin: 0.25rem;
-            border-radius: 3px;
+            border-radius: 2rem;
             outline: none;
-            color: #fff;
+            color: #FFF; /* White text */
             cursor: pointer;
             transition: background 0.3s;
         }
 
         #form>button:hover {
-            background: #555;
+            background: #7B68EE; /* Lighter purple on hover */
         }
 
         #messages {
@@ -77,17 +80,20 @@
         }
 
         #messages>li {
-            padding: 0.5rem 1rem;
+            padding: 0.75rem 1rem;
             border-radius: 10px;
-            margin-bottom: 5px;
+            margin-bottom: 0.5rem;
+            background: #E6E6FA; /* Light lavender for messages */
+            color: #4B0082; /* Dark purple text */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         #messages>li:nth-child(odd) {
-            background: #efefef;
+            background: #E6D0FA; /* Slightly darker lavender for odd messages */
         }
 
         #messages>li:nth-child(even) {
-            background: #E6D0FA;
+            background: #E6E6FA; /* Light lavender for even messages */
         }
     </style>
 </head>
